@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.interfaces{	public interface IFilterControl extends IGridControl	{			}}

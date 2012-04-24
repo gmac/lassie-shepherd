@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.data.game{	public final class CollectionRecord extends Record	{		public var hoverMode:Boolean = true;		public var hoverColor:uint = 0x000000;		public var items:Array = new Array();				public function CollectionRecord(i:String=""):void		{			super(i);		}	}}

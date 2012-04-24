@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.core{	import flash.events.IEventDispatcher;		public interface IRoomEditor extends IEventDispatcher	{		function loadRoom():void;		function unloadRoom():void;	}}

@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.controls.script{	internal final class RoomScriptModes	{		public static const ENTER_ROOM:String = "enterRoom";		public static const EXIT_ROOM:String = "exitRoom";	}}

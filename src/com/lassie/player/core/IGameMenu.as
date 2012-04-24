@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.core{	/**	* IGameMenu defines controls available for the Game Menu user interface.	*/	public interface IGameMenu extends IUILayer {		function get allowMenuAccess():Boolean;	}}

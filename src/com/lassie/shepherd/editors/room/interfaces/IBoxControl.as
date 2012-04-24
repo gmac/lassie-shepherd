@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.interfaces{	public interface IBoxControl extends IGridControl	{		function addBox():void;		function removeBox():void;	}}

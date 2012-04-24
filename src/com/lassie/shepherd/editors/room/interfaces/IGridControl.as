@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.interfaces{	internal interface IGridControl	{		function setLock(val:Boolean):void;		function setVisible(val:Boolean):void;	}}

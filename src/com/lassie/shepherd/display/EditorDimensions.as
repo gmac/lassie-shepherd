@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.display{	public final class EditorDimensions	{		public static const GAME_EDITOR_WIDTH:int = 750;		public static const GAME_EDITOR_HEIGHT:int = 550;		public static const ROOM_EDITOR_HEADER:int = 25;		public static const ROOM_EDITOR_SIDEBAR:int = 190;	}	}

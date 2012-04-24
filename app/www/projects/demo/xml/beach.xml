@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room id="beach" coreLibs="lib/demo_lib.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+	<grids>
+		<grid id="main">
+			<boxes>
+				<box x="33" y="495" w="787" h="87" nodes="n1,n2,n4,n6,n8,n10"/>
+				<box x="109" y="417" w="474" h="22" nodes="n0,n3,n5,n7,n9"/>
+			</boxes>
+			<nodes>
+				<node id="n0" x="115" y="436" join="n4,n2,n1,n3,n5,n7,n9" trap="0" />
+				<node id="n1" x="96" y="497" join="n5,n3,n0,n2,n4,n6,n8,n10" trap="0" />
+				<node id="n2" x="231" y="499" join="n5,n3,n0,n1,n4,n6,n8,n10" trap="0" name="start" />
+				<node id="n3" x="250" y="437" join="n4,n2,n1,n0,n5,n7,n9" trap="0" />
+				<node id="n4" x="373" y="499" join="n5,n3,n0,n1,n2,n6,n8,n10" trap="0" />
+				<node id="n5" x="366" y="436" join="n4,n2,n1,n0,n3,n7,n9" trap="0" />
+				<node id="n6" x="516" y="497" join="n9,n7,n1,n2,n4,n8,n10" trap="0" />
+				<node id="n7" x="481" y="437" join="n8,n6,n0,n3,n5,n9" trap="0" />
+				<node id="n8" x="645" y="498" join="n9,n7,n1,n2,n4,n6,n10" trap="0" />
+				<node id="n9" x="579" y="436" join="n8,n6,n0,n3,n5,n7" trap="0" />
+				<node id="n10" x="814" y="538" join="n1,n2,n4,n6,n8" trap="0" name="join_moai" />
+			</nodes>
+		</grid>
+	</grids>
+	<positions>
+		<position id="start" turn="4" x="231" y="499" />
+		<position id="join_moai" turn="6" x="814" y="538" />
+	</positions>
+	<filters>
+		<filter id="_main" axis="y" enabled="1">
+			<pole x="211" y="418" scale="0.45" rate="0.5" blur="1" color="0x000000" tint="0.5" />
+			<pole x="211" y="541" scale="1" rate="1" blur="5" color="0xFFFFFF" tint="0.5" />
+		</filter>
+		<filter id="light" axis="x" enabled="1">
+			<pole x="156" y="536" scale="0.5" rate="0.5" blur="1" color="0x000000" tint="0.49" />
+			<pole x="512" y="536" scale="1" rate="1" blur="5" color="0x000000" tint="0" />
+		</filter>
+	</filters>
+	<scripts>
+		<script id="_enter">
+<curtain blackout="0"/>
+		</script>
+		<script id="_exit">
+<curtain blackout="1"/>
+		</script>
+	</scripts>
+	<layers>
+		<layer id="_bg" type="background" asset="lib/demo_lib.swf:DemoBg" depth="0" visible="1" state="main">
+			<states>
+				<state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="904" hitH="600" shape="rect">
+					<param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+					<vars />
+					<title>
+						<en><![CDATA[]]></en>
+					</title>
+					<actions>
+					</actions>
+					<items>
+					</items>
+				</state>
+			</states>
+		</layer>
+		<layer id="tree_trunk" type="plane" asset="lib/demo_lib.swf:DemoPalmTree" depth="1" visible="1" state="main">
+			<states>
+				<state id="main" x="417" y="461" img="1" imgX="-27" imgY="-282" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+					<param mouse="0" float="1" parallax=""/>
+					<vars />
+					<title>
+						<en><![CDATA[]]></en>
+					</title>
+					<actions>
+					</actions>
+					<items>
+					</items>
+				</state>
+			</states>
+		</layer>
+		<layer id="palm1" type="puppet" asset="" depth="2" visible="1" state="main">
+			<states>
+				<state id="main" x="615" y="160" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-75" hitY="-156" hitW="261" hitH="246" shape="rect">
+					<param mapX="400" mapY="500" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" turn="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+					<vars />
+					<title>
+						<en><![CDATA[]]></en>
+					</title>
+					<actions>
+						<action id="act0">
+						<title>
+							<en><![CDATA[Look at]]></en>
+						</title>
+						<dialog>
+						</dialog>
+						<script>
+<dialogue play="*"/>
+						</script>
+						</action>
+						<action id="act1">
+						<title>
+							<en><![CDATA[Talk to]]></en>
+						</title>
+						<dialog>
+						</dialog>
+						<script>
+<dialogue play="*"/>
+						</script>
+						</action>
+						<action id="act2">
+						<title>
+							<en><![CDATA[Use]]></en>
+						</title>
+						<dialog>
+						</dialog>
+						<script>
+<dialogue play="*"/>
+						</script>
+						</action>
+					</actions>
+					<items>
+						<action id="coconut">
+						<title>
+							<en><![CDATA[coconut]]></en>
+						</title>
+						<dialog>
+							<dia puppet="_avatar" frame="" sound="">
+								<en><![CDATA[I can't put the coconut back on the tree!]]></en>
+							</dia>
+						</dialog>
+						<script>
+<dialogue play="*"/>
+						</script>
+						</action>
+					</items>
+				</state>
+			</states>
+		</layer>
+		<layer id="coconut" type="puppet" asset="lib/demo_lib.swf:DemoCoconut" depth="3" visible="1" state="main">
+			<states>
+				<state id="main" x="558" y="486" img="1" imgX="2" imgY="-25" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-27" hitY="-52" hitW="58" hitH="55" shape="rect">
+					<param mapX="630" mapY="500" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="1" turn="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+					<vars />
+					<title>
+						<en><![CDATA[coconut]]></en>
+					</title>
+					<actions>
+						<action id="act0">
+						<title>
+							<en><![CDATA[Look at]]></en>
+						</title>
+						<dialog>
+							<dia puppet="_avatar" frame="" sound="">
+								<en><![CDATA[It's a coconut]]></en>
+							</dia>
+						</dialog>
+						<script>
+<dialogue play="*"/>
+						</script>
+						</action>
+						<action id="act1">
+						<title>
+							<en><![CDATA[Talk to]]></en>
+						</title>
+						<dialog>
+						</dialog>
+						<script>
+<dialogue play="*"/>
+						</script>
+						</action>
+						<action id="act2">
+						<title>
+							<en><![CDATA[Pick up]]></en>
+						</title>
+						<dialog>
+							<dia puppet="_avatar" frame="" sound="">
+								<en><![CDATA[Okay, I have a coconut now!]]></en>
+							</dia>
+						</dialog>
+						<script>
+<cursor roomMouse="0" wait="1"/><layerSprite target="_avatar" animFrame="reachOut" turnView="6" waitForComplete="1"/><layer target="_current:coconut" visible="0" omit="1"/><inventory add="coconut"/><layerSprite target="_avatar" animFrame="reachIn" waitForComplete="1"/><cursor roomMouse="1" wait="0"/><dialogue play="*"/>
+						</script>
+						</action>
+					</actions>
+					<items>
+					</items>
+				</state>
+			</states>
+		</layer>
+		<layer id="exit_moai" type="puppet" asset="" depth="4" visible="1" state="main">
+			<states>
+				<state id="main" x="871" y="543" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-85" hitY="-316" hitW="116" hitH="371" shape="rect">
+					<param mapX="814" mapY="538" cursor="exit3" onclick="0" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" turn="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+					<vars />
+					<title>
+						<en><![CDATA[]]></en>
+					</title>
+					<actions>
+						<action id="act0">
+						<title>
+							<en><![CDATA[Look at]]></en>
+						</title>
+						<dialog>
+						</dialog>
+						<script>
+<game room="moai:join_beach"/>
+						</script>
+						</action>
+						<action id="act1">
+						<title>
+							<en><![CDATA[Talk to]]></en>
+						</title>
+						<dialog>
+						</dialog>
+						<script>
+<dialogue play="*"/>
+						</script>
+						</action>
+						<action id="act2">
+						<title>
+							<en><![CDATA[Use]]></en>
+						</title>
+						<dialog>
+						</dialog>
+						<script>
+<dialogue play="*"/>
+						</script>
+						</action>
+					</actions>
+					<items>
+					</items>
+				</state>
+			</states>
+		</layer>
+		<layer id="_avatar" type="avatar" asset="lib/demo_lib.swf:Patrick" depth="5" visible="1" state="main">
+			<states>
+				<state id="main" x="609" y="509" img="1" imgX="-8" imgY="7" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+					<param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="light" rate="" blur=""/>
+					<vars />
+					<title>
+						<en><![CDATA[patrick]]></en>
+					</title>
+					<actions>
+					</actions>
+					<items>
+					</items>
+				</state>
+			</states>
+		</layer>
+	</layers>
+	<trees>
+	</trees>
+</room>

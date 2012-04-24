@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine* @author Greg MacWilliam.*/package com.lassie.external{	public class LPFullScreenMode {		static public const OFF:String = "off";		static public const CENTER:String = "center";		static public const FULL:String = "full";				static public function validate($mode:String):Boolean {			return ($mode == OFF || $mode == CENTER || $mode == FULL);		}	}}

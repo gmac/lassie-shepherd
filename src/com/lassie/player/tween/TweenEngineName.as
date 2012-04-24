@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.tween{	final public class TweenEngineName	{		static public const TWEEN_LITE:String = "tweenLite";		static public const TWEENER:String = "tweener";	}}

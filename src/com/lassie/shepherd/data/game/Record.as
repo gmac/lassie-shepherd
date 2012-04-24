@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.data.game{	public class Record extends Object	{		public var id:String = "";		public var lockId:Boolean = false;				public function Record(i:String=""):void		{			super();			id = i;		}	}}

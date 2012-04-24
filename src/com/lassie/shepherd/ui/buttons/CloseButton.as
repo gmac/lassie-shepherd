@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.ui.buttons{	import flash.display.SimpleButton;		public class CloseButton extends SimpleButton	{	// --------------------------------------------------	//  Constructor	// --------------------------------------------------				public function CloseButton():void		{			super();		}	}}

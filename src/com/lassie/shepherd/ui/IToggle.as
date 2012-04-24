@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.ui{	import flash.events.IEventDispatcher;		public interface IToggle extends IEventDispatcher	{		function get selected():Boolean;		function set selected(val:Boolean):void;		function get enabled():Boolean;		function set enabled(val:Boolean):void;	}}

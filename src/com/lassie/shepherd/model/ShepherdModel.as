@@ -1,0 +1,1 @@
+﻿/*** Lassie Shepherd Editor* @author Greg MacWilliam.*/package com.lassie.shepherd.model{	import com.lassie.shepherd.core.LSDispatcher;		final public class ShepherdModel extends LSDispatcher	{		public function ShepherdModel():void {			super();		}	}}

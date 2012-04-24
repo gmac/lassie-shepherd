@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.data{	import flash.events.IEventDispatcher;		public interface IDataService extends IEventDispatcher	{		function get data():Array;	}}

@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.ui{	final public class ActionSelectMode {		static public const DYNAMIC:String = "dynamic";		static public const STATIC:String = "static";	}}

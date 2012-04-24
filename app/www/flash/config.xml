@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shepherd>
+	<settings languages="en"/>
+	<scripts>
+		<cursor display="1"/>
+		<cache field="name"/>
+		<game room="roomId"/>
+		<layer target="layerId"/>
+	</scripts>
+	<help>
+	
+		<!-- SETUP PANEL -->
+		
+		<setup_title>
+			<en>
+				<label>Project title</label>
+				<title>Title</title>
+				<info>Define a title for your project that will display during the Lassie startup screen.</info>
+			</en>
+		</setup_title>
+		
+		<setup_author>
+			<en>
+				<label>Project author</label>
+				<title>Author</title>
+				<info>Define author credits for your project that will display during the Lassie startup screen.</info>
+			</en>
+		</setup_author>
+		
+		<setup_serial>
+			<en>
+				<label>Serial #</label>
+				<title>Shepherd Serial Number</title>
+				<info>Entering a valid serial number will disable the Lassie Player's watermark.</info>
+			</en>
+		</setup_serial>
+		
+		<setup_dimensions>
+			<en>
+				<label>Game dimensions</label>
+				<title>Game pixel dimensions</title>
+				<info>Set the width and height (in pixels) of the game's Flash window.</info>
+			</en>
+		</setup_dimensions>
+		
+		<setup_base_actions>
+			<en>
+				<label>Base interactions</label>
+				<title>Base interaction titles</title>
+				<info>Enter a list of comma-seperated values defining the names of standard object interactions. Ex: "look at,talkto,use"</info>
+			</en>
+		</setup_base_actions>
+		
+		<setup_verb_dialect>
+			<en>
+				<label>Verb dialect</label>
+				<title>Verb-noun dialect</title>
+				<info>Enter the verb-noun phrase that will display while interacting with an object. Use "#verb#" and "#noun#" as the variable place holders. Ex: "#verb# #noun#" == "Look at chicken"</info>
+			</en>
+		</setup_verb_dialect>
+		
+		<setup_item_dialect>
+			<en>
+				<label>Item dialect</label>
+				<title>Use-item dialect</title>
+				<info>Enter the item-noun phrase that will display while using an item with an object. Use "#item#" and "#noun#" as the variable place holders. Ex: "Use #item# with #noun#" == "Use fork with chicken"</info>
+			</en>
+		</setup_item_dialect>
+		
+		<setup_language_key>
+			<en>
+				<label>language key</label>
+				<title>Default language key</title>
+				<info>Enter a default XML language key. All dialogue exported from Shepherd will be rendered within a language XML node. You can then define custom language configurations for each dialogue field, or allow Shepherd to automatically tag dialogue with this default key.</info>
+			</en>
+		</setup_language_key>
+		
+		<setup_editor_language>
+			<en>
+				<label>editor language</label>
+				<title>Shepherd Editor language</title>
+				<info>Select a language to display Shepherd Editor field labels and help texts in. Note that you will still see some static English text throughout the application. If your native language is not currently available, consider volunteering translation services!</info>
+			</en>
+		</setup_editor_language>
+		
+		<!-- ACTORS PANEL -->
+		
+		<actor_id>
+			<en>
+				<label>actor Id</label>
+				<title>Actor ID</title>
+				<info>Enter a one-word ID name that will be used to reference this actor record. An actor record defines a skin for the game's avatar layer.</info>
+			</en>
+		</actor_id>
+		
+		<actor_asset>
+			<en>
+				<label>library image</label>
+				<title>Library MovieClip image</title>
+				<info>Select a movieClip class from any available media library. The selected movieClip will display as the actor's image.</info>
+			</en>
+		</actor_asset>
+		
+		<actor_name>
+			<en>
+				<label>name</label>
+				<title>Actor name</title>
+				<info>Enter the rollover name to display for this actor when they are present as a non-avatar layer within a room.</info>
+			</en>
+		</actor_name>
+		
+		<actor_collection>
+			<en>
+				<label>collection</label>
+				<title>Inventory collection</title>
+				<info>Select the inventory collection to use while this actor is the game's avatar. Collection options can be defined in the Collections inspector.</info>
+			</en>
+		</actor_collection>
+		
+		<actor_response>
+			<en>
+				<label>response</label>
+				<title>Default response set</title>
+				<info>Select the response set to use while this actor is the game's avatar. Response options can be defined in the Response inspector.</info>
+			</en>
+		</actor_response>
+		
+		<actor_dia_color>
+			<en>
+				<label>dialogue color</label>
+				<title>Dialogue subtitle color</title>
+				<info>Select a color for this actor's speech subtitles.</info>
+			</en>
+		</actor_dia_color>
+		
+		<actor_angle_preview>
+			<en>
+				<label>Lassie angles</label>
+				<title>Lassie angle previews</title>
+				<info>This list contains all reserved frame labels that the Lassie engine will attempt to set for the game's avatar. Flip through and confirm that your character animations are properly referenced with these frame labels.</info>
+			</en>
+		</actor_angle_preview>
+		
+		<!-- COLLECTION PANEL -->
+		
+		<collection_id>
+			<en>
+				<label>collection Id</label>
+				<title>Collection ID</title>
+				<info>Enter a one-word ID name that will be used to reference this collection record. A collection record defines the contents of the game's inventory.</info>
+			</en>
+		</collection_id>
+		
+		<collection_hover_style>
+			<en>
+				<label>hover style</label>
+				<title>Item hover style</title>
+				<info>Defines the item cursor rollover treatment for this collection. Item cursors can be styled with an outline, a color tint, or no effect.</info>
+			</en>
+		</collection_hover_style>
+
+		<collection_hover_color>
+			<en>
+				<label>hover color</label>
+				<title>Item hover color</title>
+				<info>Defines the color of the item cursor hover style. This color will be used for the hover outline/tint.</info>
+			</en>
+		</collection_hover_color>
+		
+		<collection_item_select>
+			<en>
+				<label>add items...</label>
+				<title>Select items</title>
+				<info>Select item records to add to this collection's starting contents. Item records are managed in the Item inspector panel.</info>
+			</en>
+		</collection_item_select>
+		
+		<collection_contents>
+			<en>
+				<label>starting contents</label>
+				<title>Starting contents</title>
+				<info>These items will be the start-up contents of this collection. Collection contents can be dynamically adjusted during game playback.</info>
+			</en>
+		</collection_contents>
+		
+		<!-- ITEM PANEL -->
+		
+		<item_id>
+			<en>
+				<label>item Id</label>
+				<title>Inventory item ID</title>
+				<info>Enter a one-word ID name that will be used to reference this item record. An item record defines an object that can be placed into a game inventory.</info>
+			</en>
+		</item_id>
+		
+		<item_title>
+			<en>
+				<label>item title*</label>
+				<title></title>
+				<info>Defines the rollover title</info>
+			</en>
+		</item_title>
+		
+		<item_asset>
+			<en>
+				<label>library image</label>
+				<title></title>
+				<info></info>
+			</en>
+		</item_asset>
+		
+		<item_img_frame>
+			<en>
+				<label>image frame</label>
+				<title></title>
+				<info></info>
+			</en>
+		</item_img_frame>
+		
+		<item_hover_frame>
+			<en>
+				<label>hover frame</label>
+				<title></title>
+				<info></info>
+			</en>
+		</item_hover_frame>
+		
+		<!-- RESPONSE PANEL -->
+		
+		<response_id>
+			<en>
+				<label>response Id</label>
+				<title></title>
+				<info>Response sets provide default dialogue to use for objects that have no custom responses.</info>
+			</en>
+		</response_id>
+		
+		<!-- ROOM PANEL -->
+		
+		<room_id>
+			<en>
+				<label>room Id</label>
+				<title>Room ID</title>
+				<info>Enter a one-word ID name that will be used to reference this room layout. Changing a room's ID and re-saving room data will save the current layout as a new file.</info>
+			</en>
+		</room_id>
+		
+		<room_includes>
+			<en>
+				<label>includes</label>
+				<title>External file includes</title>
+				<info>Browse and select media libraries and raw data XML that will be used by this room. A room will automatically have access to all global media libraries in addition to the media libraries imported here. Raw data will only be loaded and used while publishing a room layout.</info>
+			</en>
+		</room_includes>
+		
+		<!-- TREE PANEL -->
+		
+		<tree_id>
+			<en>
+				<label>dialog tree Id</label>
+				<title>Dialogue tree ID</title>
+				<info>Enter a one-word ID name that will be used to reference this dialogue tree. Dialogue trees are interactive menu-based dialogue exchanges between the game's avatar and an NPC.</info>
+			</en>
+		</tree_id>
+		
+		<!-- MEDIA PANEL -->
+		
+		<media_upload_select>
+			<en>
+				<label>upload file</label>
+				<title>MediaLibrary to upload</title>
+				<info>Browse and select a media library SWF file to upload. All uploaded SWF media MUST conform to the standards specified in the MediaLibrary creation tutorial in Shepherd help. Unformatted SWF movies will not interface with the Lassie engine or Shepherd editor.</info>
+			</en>
+		</media_upload_select>
+		
+		<media_upload_type>
+			<en>
+				<label>lib type</label>
+				<title>Library type</title>
+				<info>Specify if this is a core MediaLibrary with required game assets (artwork, sound effects, etc), of if library is populated with voice tracks only. Voice libraries should remain isolated from core libraries so that players can choose not to load voice assets.</info>
+			</en>
+		</media_upload_type>
+		
+		<media_raw_filename>
+			<en>
+				<label>save as:</label>
+				<title>Raw data file name</title>
+				<info>Define a file name with which to save the current raw data. Raw data is formatted XML that can be managed externally of Shepherd and included into your game while publishing. Raw data allows flexibility in language management and shared data between objects.</info>
+			</en>
+		</media_raw_filename>
+		
+		<!-- LAYER CONTROLS -->
+		
+		<layer_id>
+			<en>
+				<label>layer Id</label>
+				<title>Layer ID</title>
+				<info>Enter a one-word ID name that will be used to reference this room layer. A "layer" is any graphical or interactive object within a room.</info>
+			</en>
+		</layer_id>
+		
+		<layer_asset>
+			<en>
+				<label>lib img</label>
+				<title>Library MovieClip image</title>
+				<info>Select a movieClip class from any available media library (global or room-specific). The selected movieClip will display as the layer's image.</info>
+			</en>
+		</layer_asset>
+		
+		<layer_editor_preview>
+			<en>
+				<label>preview</label>
+				<title>Editor preview options</title>
+				<info>Configure the selected layer's editor preview. Use these options to show/hide the layer or to lock its position. These settings will have no effect within the final game.</info>
+			</en>
+		</layer_editor_preview>
+		
+		<layer_state_select>
+			<en>
+				<label>states</label>
+				<title>Manage layer states</title>
+				<info>Select a layer state to preview and edit. A layer state is a collection of attributes that define a layer's appearance and behavior. A single layer can have multiple states.</info>
+			</en>
+		</layer_state_select>
+		
+		<layer_state_id>
+			<en>
+				<label>state Id</label>
+				<title>Layer state ID</title>
+				<info>Enter a one-word ID name that will be used to reference the current state of the selected layer. A layer state is a collection of attributes that define a layer's appearance and behavior. While all state ID's applied to a single layer must be unique, multiple layers can all implement a common state ID.</info>
+			</en>
+		</layer_state_id>
+		
+		<layer_state_num>
+			<en>
+				<label>state #</label>
+				<title>Layer state number</title>
+				<info>The numeric order of the current layer state, relative to other states of this layer. While states are generally referenced by ID, this numeric index allows a layer's current state to be dynamically advanced/retracted through its state list.</info>
+			</en>
+		</layer_state_num>
+		
+		<layer_state_vars>
+			<en>
+				<label>vars</label>
+				<title>State variables</title>
+				<info>Define custom values that apply to this layer state. Variables can be read from a layer and responded to using game scripts. Variables are defined as key/value pairs that are separated by equals and delimited by commas. Ex: "enabled=1,ready=0".</info>
+			</en>
+		</layer_state_vars>
+		
+		<!-- COMMON LAYER CONTROLS -->
+		
+		<layer_plot_x>
+			<en>
+				<label>pos X</label>
+				<title>Horizontal position</title>
+				<info>Defines the x-coordinate of the layer's registration point relative to the upper-left corner of the room layout. This can also be set by clicking and dragging an unlocked layer within the layout.</info>
+			</en>
+		</layer_plot_x>
+		
+		<layer_plot_y>
+			<en>
+				<label>Y</label>
+				<title>Vertical position</title>
+				<info>Defines the y-coordinate of the layer's registration point relative to the upper-left corner of the room layout. This can also be set by clicking and dragging an unlocked layer within the layout.</info>
+			</en>
+		</layer_plot_y>
+		
+		<layer_hit_shape>
+			<en>
+				<label>shape</label>
+				<title>Hit area shape</title>
+				<info>Specifies the shape of the layer's hit area. A layer's hit area can be rectangular or elliptical.</info>
+			</en>
+		</layer_hit_shape>
+		
+		<layer_hit_x>
+			<en>
+				<label>pos X</label>
+				<title>Hit area X-position</title>
+				<info>Defines the x-coordinate of the layer's hit area within the layer's local coordinate space. Position is based upon the hit area's upper-left corner relative to the layer's registration point. This value can also be adjusted by holding SHIFT and then clicking and dragging the layer's hit area.</info>
+			</en>
+		</layer_hit_x>
+		
+		<layer_hit_y>
+			<en>
+				<label>Y</label>
+				<title>Hit area Y-position</title>
+				<info>Defines the y-coordinate of the layer's hit area within the layer's local coordinate space. Position is based upon the hit area's upper-left corner relative to the layer's registration point. This value can also be adjusted by holding SHIFT and then clicking and dragging the layer's hit area.</info>
+			</en>
+		</layer_hit_y>
+		
+		<layer_hit_width>
+			<en>
+				<label>size W</label>
+				<title>Hit area width</title>
+				<info>Defines the width of the layer's hit area. A hit area can also be scaled by holding CTRL and then clicking and dragging on the layer's hit area.</info>
+			</en>
+		</layer_hit_width>
+		
+		<layer_hit_height>
+			<en>
+				<label>H</label>
+				<title>Hit area height</title>
+				<info>Defines the height of the layer's hit area. A hit area can also be scaled by holding CTRL and then clicking and dragging on the layer's hit area.</info>
+			</en>
+		</layer_hit_height>
+		
+		<layer_img_frame>
+			<en>
+				<label>frame</label>
+				<title>Frame label</title>
+				<info>Defines what frame label of the layer image's MovieClip to display.</info>
+			</en>
+		</layer_img_frame>
+		
+		<layer_img_prefix>
+			<en>
+				<label>prefix</label>
+				<title>Frame prefix</title>
+				<info>Specifies a prefix to prepend to all frame label requests within the layer's image MovieClip.</info>
+			</en>
+		</layer_img_prefix>
+		
+		<layer_img_alpha>
+			<en>
+				<label>alpha</label>
+				<title></title>
+				<info>Defines the alpha (opacity) of the layer's image MovieClip.</info>
+			</en>
+		</layer_img_alpha>
+		
+		<layer_img_blend>
+			<en>
+				<label>blend</label>
+				<title>Image blend mode</title>
+				<info>Defines the blend mode rendering of the layer's image MovieClip.</info>
+			</en>
+		</layer_img_blend>
+		
+		<layer_img_x>
+			<en>
+				<label>pos X</label>
+				<title>Image X-position</title>
+				<info>Defines the x-coordinate of the layer's image MovieClip within the layer's local coordinate space. Position is based upon the image clip's native registration point relative to the layer's registration point. This value can also be adjusted by holding SHIFT and then clicking and dragging the layer's image clip.</info>
+			</en>
+		</layer_img_x>
+		
+		<layer_img_y>
+			<en>
+				<label>Y</label>
+				<title>Image Y-position</title>
+				<info>Defines the y-coordinate of the layer's image MovieClip within the layer's local coordinate space. Position is based upon the image clip's native registration point relative to the layer's registration point. This value can also be adjusted by holding SHIFT and then clicking and dragging the layer's image clip.</info>
+			</en>
+		</layer_img_y>
+		
+		<layer_img_width>
+			<en>
+				<label>scale W</label>
+				<title>Image width</title>
+				<info>Defines the x-scale of the layer's image MovieClip. An image clip can also be scaled by holding CTRL and then clicking and dragging on the layer's image.</info>
+			</en>
+		</layer_img_width>
+		
+		<layer_img_height>
+			<en>
+				<label>H</label>
+				<title>Image height</title>
+				<info>Defines the y-scale of the layer's image MovieClip. An image clip can also be scaled by holding CTRL and then clicking and dragging on the layer's image.</info>
+			</en>
+		</layer_img_height>
+		
+		<layer_title>
+			<en>
+				<label>title*</label>
+				<title>Layer rollover title</title>
+				<info>Defines the title to display when a player rolls-over or interacts with the layer. [*]: field supports raw data includes.</info>
+			</en>
+		</layer_title>
+		
+		<layer_cursor>
+			<en>
+				<label>cursor</label>
+				<title>Cursor frame label</title>
+				<info>Defines the cursor frame label to display when this layer is rolled over. Leaving the field blank assumes the default of "on". Use "#none" to specifically disable any visual rollover treatment.</info>
+			</en>
+		</layer_cursor>
+		
+		<layer_bind>
+			<en>
+				<label>bind</label>
+				<title>Grid node binding</title>
+				<info>Specifies the name of a grid node to bind as this layer's walk reference point. Once a grid node has been bound, its coordinates will define the layer's floor mapping.</info>
+			</en>
+		</layer_bind>
+		
+		<layer_onclick>
+			<en>
+				<label>onclick</label>
+				<title>onClick action</title>
+				<info>Defines a state action to automatically execute when this layer is clicked. Actions are configured and managed in the Puppet Actions inspector window.</info>
+			</en>
+		</layer_onclick>
+		
+		<layer_angle>
+			<en>
+				<label>angle</label>
+				<title>Layer angle</title>
+				<info>Defines the Lassie 3D view-angle setting (1-8) that the layer's artwork is displayed as. For example, an NPC seen facing front-quarter-right would be given a view setting of "4". This setting is only required if the layer image clip has a full range of 3D views needing to be managed. This setting can be ignored for flat artwork with only a single view state.</info>
+			</en>
+		</layer_angle>
+		
+		<layer_rate>
+			<en>
+				<label>rate</label>
+				<title>Motion rate</title>
+				<info>The rate a which this layer will dynamically tween between two points on screen, measured in total pixels moved per second. Note that the speed matrix filter will dynamically modify this rate.</info>
+			</en>
+		</layer_rate>
+		
+		<layer_rotate>
+			<en>
+				<label>rotate</label>
+				<title>Image rotation</title>
+				<info>The rotation of the layer display, relative to the layer's registration point. Note that rotation is a fairly taxing render process, so it is not generally recommended that this setting be used. Whenever possible, just render your source image display at the proper rotation value.</info>
+			</en>
+		</layer_rotate>
+		
+		<layer_subtitle>
+			<en>
+				<label>diaColor</label>
+				<title>Subtitle color</title>
+				<info>Select a color for this layer's speech subtitles.</info>
+			</en>
+		</layer_subtitle>
+
+		<layer_scale_filter>
+			<en>
+				<label>scale</label>
+				<title>Scale matrix filter</title>
+				<info>Select a scale matrix filter to apply to this layer. Scale matrix filters are defined within the "Grids" inspector panel. A scale matrix filter will dynamically adjust the layer's size relative to its position within the filter's source grid.</info>
+			</en>
+		</layer_scale_filter>
+		
+		<layer_color_filter>
+			<en>
+				<label>color</label>
+				<title>Color-matrix filter</title>
+				<info>Select a color matrix filter to apply to this layer. Color matrix filters are defined within the "Grids" inspector panel. A color matrix filter will dynamically tint the layer relative to its position within the filter's source grid.</info>
+			</en>
+		</layer_color_filter>
+		
+		<layer_blur_filter>
+			<en>
+				<label>blur</label>
+				<title>Blur-matrix filter</title>
+				<info>Select a blur matrix filter to apply to this layer. Blur matrix filters are defined within the "Grids" inspector panel. A blur matrix filter will dynamically blur the layer relative to its position within the filter's source grid.</info>
+			</en>
+		</layer_blur_filter>
+		
+		<layer_speed_filter>
+			<en>
+				<label>speed</label>
+				<title>Speed-matrix filter</title>
+				<info>Select a speed matrix filter to apply to this layer. Speed matrix filters are defined within the "Grids" inspector panel. A speed matrix filter will dynamically adjust the layer's rate of movement relative to its position within the filter's source grid.</info>
+			</en>
+		</layer_speed_filter>
+		
+		<!-- TYPE-SPECIFIC LAYER CONTROLS -->
+		
+		<layer_bg_marginL>
+			<en>
+				<label>edge L</label>
+				<title>Left scroll margin</title>
+				<info>The margin (in pixels) from the left edge of the screen that the avatar layer must cross for the room to scroll horizontally.</info>
+			</en>
+		</layer_bg_marginL>
+		
+		<layer_bg_marginR>
+			<en>
+				<label>R</label>
+				<title>Right scroll margin</title>
+				<info>The margin (in pixels) from the right edge of the screen that the avatar layer must cross for the room to scroll horizontally.</info>
+			</en>
+		</layer_bg_marginR>
+		
+		<layer_bg_marginT>
+			<en>
+				<label>edge T</label>
+				<title>Top scroll margin</title>
+				<info>The margin (in pixels) from the top edge of the screen that the avatar layer must cross for the room to scroll vertically.</info>
+			</en>
+		</layer_bg_marginT>
+		
+		<layer_bg_marginB>
+			<en>
+				<label>B</label>
+				<title>Bottom scroll margin</title>
+				<info>The margin (in pixels) from the bottom edge of the screen that the avatar layer must cross for the room to scroll vertically.</info>
+			</en>
+		</layer_bg_marginB>
+		
+		<layer_avatar_preview>
+			<en>
+				<label>preview</label>
+				<title>Actor preview</title>
+				<info>Select an actor skin to preview as the layer display. Actor skins are defined in the Actors inspector panel of the main game editor window. Note that the selected actor skin is not permanently assigned to the avatar layer. A room's avatar will be dynamically skinned based on the current actor during game playback.</info>
+			</en>
+		</layer_avatar_preview>
+		
+		<layer_plane_parallax>
+			<en>
+				<label>parallax</label>
+				<title>Parallax scrolling</title>
+				<info>Select a parallax scroll axis. Parallax scrolling will take effect while the background layer scrolls and will dynamically shift the plane based on its size relative to the game window. This causes the parallax layer to scroll at a different rate than the background layer. The closer a plane's dimensions are to that of the game window, the slower it will scroll.</info>
+			</en>
+		</layer_plane_parallax>
+		
+		<!-- LAYERING CONTROLS -->
+
+		<layering_type>
+			<en>
+				<label>add:</label>
+				<title>Add a layer type</title>
+				<info>Select a layer type, then use the "add" button to add layers of the specific type to your layout. There are four unique layer types: background, plane, puppet, and avatar. A room has a single background layer by default, and can have one avatar layer added to it. You may add unlimited planes and puppets.</info>
+			</en>
+		</layering_type>
+
+		<!-- ROOM CONTROLS -->
+		
+		<room_music>
+			<en>
+				<label>music</label>
+				<title>Select a sound asset as the room's background music track.</title>
+				<info></info>
+			</en>
+		</room_music>
+
+		<room_sound>
+			<en>
+				<label>fx</label>
+				<title>Select a sound asset as the room's background FX track.</title>
+				<info></info>
+			</en>
+		</room_sound>
+
+		<!-- GRID CONTROLS -->
+
+		<grid_select>
+			<en>
+				<label>grid</label>
+				<title>Select a grid</title>
+				<info></info>
+			</en>
+		</grid_select>
+
+		<grid_id>
+			<en>
+				<label>grid Id</label>
+				<title>Grid ID</title>
+				<info></info>
+			</en>
+		</grid_id>
+
+		<grid_boxes>
+			<en>
+				<label>boxes</label>
+				<title>Manage grid boxes</title>
+				<info></info>
+			</en>
+		</grid_boxes>
+
+		<grid_nodes>
+			<en>
+				<label>nodes</label>
+				<title>Manage grid nodes</title>
+				<info></info>
+			</en>
+		</grid_nodes>
+
+		<grid_beams>
+			<en>
+				<label>beams</label>
+				<title>Manage grid beams</title>
+				<info></info>
+			</en>
+		</grid_beams>
+		
+		<grid_node_id>
+			<en>
+				<label>node Id</label>
+				<title>Selected node ID</title>
+				<info>Specifies a unique ID for the selected grid node.</info>
+			</en>
+		</grid_node_id>
+
+		<grid_node_turn>
+			<en>
+				<label>turn</label>
+				<title>The turn view (number 1-8) to apply to a character plotted at this position upon room transitions.</title>
+				<info>Specifies the turn view (number 1-8) that the avatar layer will assume when plotted at this starting position.</info>
+			</en>
+		</grid_node_turn>
+		
+		<grid_node_scale>
+			<en>
+				<label>scale</label>
+				<title>Selected node scale</title>
+				<info>Specifies the scale filter value assigned to the selected grid node.</info>
+			</en>
+		</grid_node_scale>
+
+		<grid_node_speed>
+			<en>
+				<label>sp</label>
+				<title>Selected node speed</title>
+				<info>Specifies the rate filter value assigned to the selected grid node.</info>
+			</en>
+		</grid_node_speed>
+
+		<grid_node_blur>
+			<en>
+				<label>blur</label>
+				<title>Selected node blur</title>
+				<info>Specifies the blur filter value assigned to the selected grid node.</info>
+			</en>
+		</grid_node_blur>
+
+		<grid_node_color>
+			<en>
+				<label>color</label>
+				<title>Selected node color</title>
+				<info>Specifies the color tint assigned to the selected grid node.</info>
+			</en>
+		</grid_node_color>
+		
+		<grid_node_script>
+			<en>
+				<label>script</label>
+				<title>Node script</title>
+				<info>Specifies the script XML of the currently selected node.</info>
+			</en>
+		</grid_node_script>
+		
+		<!-- FILTER MATRIX CONTROLS -->
+
+		<filter_manage>
+			<en>
+				<label>type:</label>
+				<title>Manage matrix filters</title>
+				<info></info>
+			</en>
+		</filter_manage>
+		
+		<filter_select>
+			<en>
+				<label>filters</label>
+				<title>Select a matrix filter</title>
+				<info></info>
+			</en>
+		</filter_select>
+
+		<filter_id>
+			<en>
+				<label>filter Id</label>
+				<title>Matrix filter ID</title>
+				<info></info>
+			</en>
+		</filter_id>
+
+		<filter_axis>
+			<en>
+				<label>axis</label>
+				<title>Filter axis</title>
+				<info></info>
+			</en>
+		</filter_axis>
+		
+		<filter_enabled>
+			<en>
+				<label>enabled</label>
+				<title>Enable filter</title>
+				<info></info>
+			</en>
+		</filter_enabled>
+
+		<filter_percent0>
+			<en>
+				<label>perc A</label>
+				<title>Filter percent A</title>
+				<info></info>
+			</en>
+		</filter_percent0>
+
+		<filter_percent1>
+			<en>
+				<label>B</label>
+				<title>Filter percent B</title>
+				<info></info>
+			</en>
+		</filter_percent1>
+
+		<filter_value0>
+			<en>
+				<label>value A</label>
+				<title>Filter value A</title>
+				<info></info>
+			</en>
+		</filter_value0>
+
+		<filter_value1>
+			<en>
+				<label>B</label>
+				<title>Filter value B</title>
+				<info></info>
+			</en>
+		</filter_value1>
+		
+	</help>
+</shepherd>

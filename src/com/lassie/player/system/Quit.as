@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.system{	import flash.system.fscommand;		public class Quit	{		public function Quit():void {			// do nothing.		}				/**		* Calls for the application to quit.		*/		public function call():void {			fscommand("quit");		}	}}

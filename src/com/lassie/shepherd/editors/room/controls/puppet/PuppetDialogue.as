@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.controls.puppet{	import com.lassie.shepherd.editors.actions.BaseDialogueEditor;		public final class PuppetDialogue extends BaseDialogueEditor	{		public function PuppetDialogue():void		{			super();			isRoomEditor = true;		}	}}

@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.model{	final public class GameSettings	{		private var _diaBaseTime:int = 400;		private var _diaScaleTime:int = 50;		private var _diaRestTime:int = 400;				public function GameSettings($xml:XML):void {			super();		}					}}

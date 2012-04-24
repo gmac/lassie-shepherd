@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.ui.window{	import flash.events.IEventDispatcher;		public interface IWindowControlPanel extends IEventDispatcher	{		function populate():void;		function resize(w:int, h:int):void;	}}

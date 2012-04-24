@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.interfaces{	public interface INodeControl extends IGridControl	{		function addNode():void;		function removeNodes():void;		function joinNodes():void;		function breakNodes():void;		function updateSelection():void;	}}

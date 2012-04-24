@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.data.game{	public final class ScriptRecord extends Record	{		public var script:String = "";				public function ScriptRecord(i:String=""):void		{			super(i);		}				public function getValue():String {			return unescape(script);		}				public function setValue($value:String):void {			script = escape($value);		}	}}

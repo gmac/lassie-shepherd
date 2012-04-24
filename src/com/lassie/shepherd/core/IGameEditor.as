@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.core{	import flash.events.IEventDispatcher;		public interface IGameEditor extends IEventDispatcher	{			}}

@@ -1,0 +1,80 @@
+RESPONSES
+
+--------------------------------------------------
+- Response: main
+--------------------------------------------------
+  -----
+  Action: "act0" (response: main)
+
+   - Dialog [puppet: _avatar, voice::global0004]
+   "I don't see anything special about that"
+
+  -----
+  Action: "act1" (response: main)
+
+   - Dialog [puppet: _avatar, voice::global0005]
+   "I have nothing to say"
+
+  -----
+  Action: "act2" (response: main)
+
+   - Dialog [puppet: _avatar, voice::global0006]
+   "What would I do with it?"
+
+  -----
+  Action: "item" (response: main)
+
+   - Dialog [puppet: _avatar, voice::global0007]
+   "That item has no use here"
+
+
+
+
+ITEMS
+
+--------------------------------------------------
+- Item: coconut
+--------------------------------------------------
+title: "Coconut"
+  -----
+  Action: "Look at" (item: coconut)
+
+   - Dialog [puppet: _avatar, voice::global0000]
+   "It looks like a coconut."
+
+  -----
+  Action: "Taste" (item: coconut)
+
+   - Dialog [puppet: _avatar, voice::global0001]
+   "Mmmm. It tastes like a Pina Colada!"
+
+  -----
+  Action: "Use" (item: coconut)
+
+   - Dialog [puppet: _avatar, voice::global0002]
+   "What should I do with it?"
+
+  -----
+  Action: "_default" (item: coconut)
+
+   - Dialog [puppet: _avatar, voice::global0003]
+   "A coconut has no use there."
+
+
+
+
+COMBOS
+
+
+
+_avatar,"I don't see anything special about that",:global0004
+_avatar,"I have nothing to say",:global0005
+_avatar,"What would I do with it?",:global0006
+_avatar,"That item has no use here",:global0007
+_avatar,"It looks like a coconut.",:global0000
+_avatar,"Mmmm. It tastes like a Pina Colada!",:global0001
+_avatar,"What should I do with it?",:global0002
+_avatar,"A coconut has no use there.",:global0003
+
+
+

@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.ui{	public final class NavButtonIcons	{		public static const PUPPET_DIALOGUE:String = "puppet_dialogue";				public static const PUPPET_SCRIPT:String = "puppet_script";	}}

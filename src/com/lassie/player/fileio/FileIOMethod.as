@@ -1,0 +1,1 @@
+﻿package com.lassie.player.fileio{	public class FileIOMethod	{		static public const SHARED_OBJECT:String = "sharedObject";		static public const SERVER:String = "server";		static public const SYSTEM:String = "system";		static public const AIR:String = "air";	}}

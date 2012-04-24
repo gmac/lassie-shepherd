@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.interfaces{	internal interface IControlSystem	{		function get active():Boolean;		function activate():void;		function deactivate():void;		function updateDisplay():void;	}}

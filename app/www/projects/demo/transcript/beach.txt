@@ -1,0 +1,92 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: tree_trunk
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: tree_trunk)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: palm1
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: palm1)
+ title: ""
+
+  -----
+  Action: "0" (layer: palm1, state: main)
+
+  -----
+  Action: "1" (layer: palm1, state: main)
+
+  -----
+  Action: "2" (layer: palm1, state: main)
+
+  -----
+  Item: "coconut" (layer: palm1, state: main)
+
+   - Dialog [puppet: _avatar, voice:]
+   "I can't put the coconut back on the tree!"
+
+
+--------------------------------------------------
+- Layer: coconut
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: coconut)
+ title: "coconut"
+
+  -----
+  Action: "0" (layer: coconut, state: main)
+
+   - Dialog [puppet: _avatar, voice:]
+   "It's a coconut"
+
+  -----
+  Action: "1" (layer: coconut, state: main)
+
+  -----
+  Action: "2" (layer: coconut, state: main)
+
+   - Dialog [puppet: _avatar, voice:]
+   "Okay, I have a coconut now!"
+
+
+--------------------------------------------------
+- Layer: exit_moai
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: exit_moai)
+ title: ""
+
+  -----
+  Action: "0" (layer: exit_moai, state: main)
+
+  -----
+  Action: "1" (layer: exit_moai, state: main)
+
+  -----
+  Action: "2" (layer: exit_moai, state: main)
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "patrick"
+
+
+
+
+TREES

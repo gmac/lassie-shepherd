@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.core{	/**	* ISkipButton defines methods available on the game's skip-sequence control button.	*/	public interface ISkipButton extends IUILayer	{		//function setSequence($lockUI:Boolean, $skippable:Boolean=false):void;	}}

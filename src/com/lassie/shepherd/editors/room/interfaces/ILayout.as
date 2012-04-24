@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.interfaces{	import flash.events.IEventDispatcher;	import flash.geom.Rectangle;		public interface ILayout extends IEventDispatcher	{		function get scrollRect():Rectangle;		function set scrollRect(rect:Rectangle):void;	}}

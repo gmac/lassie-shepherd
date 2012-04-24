@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.data.game{	import com.lassie.shepherd.data.InteractionData;		public final class ComboRecord extends Record	{		public var primary:String = "";		public var items:Array = new Array();		public var action:InteractionData = new InteractionData();				public function ComboRecord(i:String=""):void		{			super(i);		}	}}

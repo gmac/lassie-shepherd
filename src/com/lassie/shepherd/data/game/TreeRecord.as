@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.data.game{	public final class TreeRecord extends Record	{		public var root:TierData;		public var puppets:String = "_avatar";		public var spawn:int = 0;				public function TreeRecord(i:String=""):void		{			super(i);			root = new TierData();		}	}}

@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player{	final public class LassiePlayerFP extends LassiePlayer	{		/**		* Creates the LassiePlayer application.		*/		public function LassiePlayerFP():void {			super();		}	}}

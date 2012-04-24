@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.game.actions{	import com.lassie.shepherd.editors.actions.BaseScriptEditor;		public final class GameScriptEditor extends BaseScriptEditor	{	// --------------------------------------------------	//  Constructor	// --------------------------------------------------			public function GameScriptEditor():void		{			super();		}	}}

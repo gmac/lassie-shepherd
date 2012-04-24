@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.core{	import flash.events.IEventDispatcher;		public interface IDataCore extends IEventDispatcher	{		function getCoreLibs():String;		function getVoiceLibs():String;		function getRawData():String;		function addCoreLib(file:String):Boolean;		function addVoiceLib(file:String):Boolean;		function addRawData(file:String):Boolean;	}}

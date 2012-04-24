@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.services.lib{	public final class LibClassContent	{		public static const MOVIE_CLIP_CONTENT:String = "MovieClip";		public static const SOUND_CONTENT:String = "Sound";		public static const XML_CONTENT:String = "XML";	}}

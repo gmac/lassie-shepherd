@@ -1,0 +1,89 @@
+LAYERS
+
+--------------------------------------------------
+- Layer: _bg
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _bg)
+ title: ""
+
+
+--------------------------------------------------
+- Layer: exit_beach
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: exit_beach)
+ title: ""
+
+  -----
+  Action: "0" (layer: exit_beach, state: main)
+
+  -----
+  Action: "1" (layer: exit_beach, state: main)
+
+  -----
+  Action: "2" (layer: exit_beach, state: main)
+
+
+--------------------------------------------------
+- Layer: moai_ahu
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: moai_ahu)
+ title: "moai ahu"
+
+  -----
+  Action: "0" (layer: moai_ahu, state: main)
+
+   - Dialog [puppet: _avatar, voice:]
+   "This moai ahu is a ceremonial platform of the old Rapa Nui people."
+
+  -----
+  Action: "1" (layer: moai_ahu, state: main)
+
+   - Dialog [puppet: _avatar, voice:]
+   "I have nothing to say to big stone statues."
+
+  -----
+  Action: "2" (layer: moai_ahu, state: main)
+
+   - Dialog [puppet: _avatar, voice:]
+   "You've got to be kidding..."
+
+  -----
+  Item: "coconut" (layer: moai_ahu, state: main)
+
+   - Dialog [puppet: _avatar, voice:]
+   "I'll just leave this coconut as an offering."
+
+ --------------------------------------------------
+ State: offering (layer: moai_ahu)
+ title: "moai ahu"
+
+  -----
+  Action: "0" (layer: moai_ahu, state: offering)
+
+   - Dialog [puppet: _avatar, voice:]
+   "This moai ahu is a ceremonial platform of the old Rapa Nui people."
+
+   - Dialog [puppet: _avatar, voice:]
+   "I've now left an offering."
+
+  -----
+  Action: "1" (layer: moai_ahu, state: offering)
+
+  -----
+  Action: "2" (layer: moai_ahu, state: offering)
+
+
+--------------------------------------------------
+- Layer: _avatar
+--------------------------------------------------
+ --------------------------------------------------
+ State: main (layer: _avatar)
+ title: "patrick"
+
+
+
+
+TREES

@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.ui{	import com.lassie.menu.LPGameMenu;		/**	* GameMenuDisplay is a unique subclass of the LPGameMenu class.	*/	final public class GameMenuDisplay extends LPGameMenu	{		public function GameMenuDisplay():void {			super();		}	}}

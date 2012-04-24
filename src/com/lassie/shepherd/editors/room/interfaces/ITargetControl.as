@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.interfaces{	import com.lassie.shepherd.editors.room.interfaces.ITarget;	import com.lassie.shepherd.editors.room.interfaces.IControlSystem;		public interface ITargetControl extends IControlSystem	{		function addTarget():ITarget;	}}

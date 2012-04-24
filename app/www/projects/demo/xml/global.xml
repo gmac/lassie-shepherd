@@ -1,0 +1,148 @@
+<global id="_d6cd2dd78ec6ba32669b2254b0cbe175" key="" compact="0" stageWidth="800" stageHeight="600" coreLibs="lib/demo_lib.swf" voiceLibs="" langOptions="en">
+  <config language="en" actor="patrick" room="beach:start" soundtrackVolume="0.5" soundfxVolume="0.5" voiceVolume="0.5" voices="0" subtitles="1"/>
+  <title><![CDATA[Demo Game]]></title>
+  <author><![CDATA[Team Lassie]]></author>
+  <verbDialect>
+    <en><![CDATA[#verb# #noun#]]></en>
+  </verbDialect>
+  <itemDialect>
+    <en><![CDATA[Use #item# with #noun#]]></en>
+  </itemDialect>
+  <actors>
+    <actor id="patrick" asset="lib/demo_lib.swf:Patrick" regX="8" regY="-7" response="main" inventory="main" subtitle="0xFFFFFF"><![CDATA[Patrick]]></actor>
+  </actors>
+  <responses>
+    <response id="main">
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="">
+            <en><![CDATA[I don't see anything special about that]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Talk to]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="">
+            <en><![CDATA[I have nothing to say]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="">
+            <en><![CDATA[What would I do with it?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="item">
+        <title>
+          <en><![CDATA[Item]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="">
+            <en><![CDATA[That item has no use here]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </response>
+  </responses>
+  <items>
+    <item id="coconut" asset="lib/demo_lib.swf:DemoCoconut" frame="" hover="">
+      <title>
+        <en><![CDATA[Coconut]]></en>
+      </title>
+      <action id="act0">
+        <title>
+          <en><![CDATA[Look at]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="">
+            <en><![CDATA[It looks like a coconut.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act1">
+        <title>
+          <en><![CDATA[Taste]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="">
+            <en><![CDATA[Mmmm. It tastes like a Pina Colada!]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="act2">
+        <title>
+          <en><![CDATA[Use]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="">
+            <en><![CDATA[What should I do with it?]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+      <action id="_default">
+        <title>
+          <en><![CDATA[_default]]></en>
+        </title>
+        <dialog>
+          <dia puppet="_avatar" frame="" sound="">
+            <en><![CDATA[A coconut has no use there.]]></en>
+          </dia>
+        </dialog>
+        <script>
+          <dialogue play="*"/>
+        </script>
+      </action>
+    </item>
+  </items>
+  <inventories>
+    <inventory id="main" items="" hoverStyle="outline" hoverColor="0xFF0000"/>
+  </inventories>
+  <combos/>
+  <scripts>
+    <script id="_onStartGame"/>
+    <script id="_onStartUp">
+      <inventory mouseAction="out">
+        <inventory display="hide"/>
+      </inventory>
+      <keyboard addKeyScript="i">
+        <inventory display="toggle"/>
+      </keyboard>
+      <keyboard addKeyScript="m">
+        <menu display="show"/>
+      </keyboard>
+      <menu display="show"/>
+    </script>
+  </scripts>
+</global>

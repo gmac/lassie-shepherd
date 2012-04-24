@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.ui{	import flash.geom.ColorTransform;		final public class ToggleButtonSmall extends ToggleButton	{		public function ToggleButtonSmall():void		{			super();			colorOn = new ColorTransform();		}	}}

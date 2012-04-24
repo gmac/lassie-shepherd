@@ -1,0 +1,116 @@
+/*
+Initialize CSS
+---------------------------------------------- */
+
+/* Neutralize styling: Elements we want to clean out entirely */
+html, body,
+fieldset, form,
+dd, dt, li,
+td, th  {
+	margin: 0;
+	padding: 0;
+}
+
+/* Neutralize styling: Elements with a vertical margin */
+h1, h2, h3, h4, h5, h6, p, pre,
+blockquote, ul, ol, dl, address {
+	margin: 1em 0;
+	padding: 0;
+}
+
+/* Apply left margin only to the few elements that need it */
+blockquote {
+	margin-left: 1em;
+}
+
+/* Miscellaneous: */
+abbr,
+acronym {
+	border: none;
+}
+
+form label {
+	cursor: pointer;
+}
+
+fieldset,
+img {
+	border: none;
+}
+
+input, select, textarea {
+	font-size: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+address, caption, cite, code,
+dfn, em, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+
+/*
+Overflow Clearing Method
+---------------------------------------------- */
+.clear { /* using auto to avoid Firefox/Mozilla bug with overflow: hidden */
+	overflow: auto;
+}
+
+
+
+/*
+Text Replacement
+---------------------------------------------- */
+.replace {
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color:transparent;
+	display:block;
+}
+
+	/* tidy these up */
+	.replace * {
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-color:transparent;
+
+		display:block;
+		text-indent: -10000px;
+	}
+
+		.replace a {
+			text-indent:0;
+		}
+
+		.replace a span {
+			text-indent:-10000px;
+		}
+
+
+
+/*
+Accessibility
+---------------------------------------------- */
+span.accesskey {
+	text-decoration:none;
+}
+
+.accessibility {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}

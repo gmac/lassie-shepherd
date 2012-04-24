@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.editors.room.display{	public final class AlertTitles	{		public static const ALERT_MESSAGE:String = "message";				public static const ALERT_WARNING:String = "warning";				public static const ALERT_ERROR:String = "error";	}}

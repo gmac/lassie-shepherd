@@ -1,0 +1,1 @@
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.ui{	final public class ContextFormat {		static public const NONE:String = "";		static public const UPPER_CASE:String = "upper";		static public const LOWER_CASE:String = "lower";	}}

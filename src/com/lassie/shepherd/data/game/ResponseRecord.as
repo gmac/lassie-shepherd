@@ -1,0 +1,1 @@
+﻿package com.lassie.shepherd.data.game{	import com.lassie.shepherd.data.InteractionFactory;		public final class ResponseRecord extends Record	{		public var actions:Array = InteractionFactory.createList(true);				public function ResponseRecord(i:String=""):void		{			super(i);		}	}}
