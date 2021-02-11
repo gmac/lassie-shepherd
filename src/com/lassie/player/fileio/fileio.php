@@ -18,7 +18,7 @@ if ($file != '')
 {
 	$path = "./";
 	$data = stripslashes($data);
-	
+
 	switch($method)
 	{
 		case 'r': read($path . $file); return;

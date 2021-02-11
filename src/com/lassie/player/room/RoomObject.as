@@ -5,18 +5,18 @@
 package com.lassie.player.room
 {
 	import com.lassie.player.core.LPSprite;
-	
+
 	internal class RoomObject extends LPSprite
 	{
 		// reference to parent room display
 		private var _parentRoom:RoomDisplay;
-		
+
 		public function RoomObject($parent:RoomDisplay):void
 		{
 			super();
 			_parentRoom = $parent;
 		}
-		
+
 		/**
 		* Destroys room reference and super classes
 		*/

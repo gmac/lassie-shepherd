@@ -1,1 +1,1 @@
-﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.tween{   	final public class EaseMethod	{		static public const IN:String = "easeIn";		static public const OUT:String = "easeOut";		static public const IN_OUT:String = "easeInOut";	}}
+﻿/*** Lassie Engine Game Player* @author Greg MacWilliam.*/package com.lassie.player.tween{	final public class EaseMethod	{		static public const IN:String = "easeIn";		static public const OUT:String = "easeOut";		static public const IN_OUT:String = "easeInOut";	}}

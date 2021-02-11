@@ -13,7 +13,7 @@ package com.lassie.player.events
 		static public const SHOW_COMPLETE:String = "uiShowComplete";
 		static public const HIDE_COMPLETE:String = "uiHideComplete";
 		static public const TWEEN_COMPLETE:String = "uiTweenComplete";
-		
+
 		public function UIEvent($type:String, $bubbles:Boolean=false, $cancelable:Boolean=false):void
 		{
 			super($type, $bubbles, $cancelable);

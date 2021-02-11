@@ -7,7 +7,7 @@ package com.lassie.player.geom
 	import flash.display.Sprite;
 	import flash.display.Graphics;
 	import flash.display.Shape;
-	
+
 	final internal class GridDraw
 	{
 		/**
@@ -17,17 +17,17 @@ package com.lassie.player.geom
 		{
 			var $gridImage:Sprite = new Sprite();
 			var $nodeImage:Sprite = new Sprite();
-			
+
 			_drawBoxes($grid, $gridImage);
 			_drawBeams($grid, $gridImage.graphics);
 			_drawNodes($grid, $nodeImage.graphics);
-			
+
 			// disable mouse and add drawing to scope
 			$gridImage.mouseEnabled = false;
 			$gridImage.addChild($nodeImage);
 			$scope.addChild($gridImage);
 		}
-		
+
 		/**
 		* Draws grid boxes.
 		*/
@@ -44,7 +44,7 @@ package com.lassie.player.geom
 				$scope.addChild($canvas);
 			}
 		}
-		
+
 		/**
 		* Draws grid beams.
 		*/
@@ -52,17 +52,17 @@ package com.lassie.player.geom
 		{
 			var $drawn:Array = new Array();
 			$canvas.lineStyle(2, 0x000000);
-			
+
 			// loop through all grid nodes
 			for (var $j:int=0; $j < $grid.numNodes; $j++)
 			{
 				var $node:Node = $grid.getNodeAt($j);
-				
+
 				// loop through all neighbors of each child.
 				for (var $k:int=0; $k < $node.numNeighbors; $k++)
 				{
 					var $neighbor:Node = $grid.getNodeById( $node.getNeighbor($k) );
-					
+
 					// check if a beam has been drawn yet
 					if ($drawn.indexOf($neighbor.id+"-"+$node.id) < 0)
 					{
@@ -73,7 +73,7 @@ package com.lassie.player.geom
 				}
 			}
 		}
-		
+
 		/**
 		* Draws grid nodes.
 		*/

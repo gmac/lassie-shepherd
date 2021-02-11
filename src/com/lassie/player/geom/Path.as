@@ -13,7 +13,7 @@ package com.lassie.player.geom
 		// private
 		private var _path:Array;
 		private var _nodes:Array;
-		
+
 		public function Path($length:Number=-1, $bestCase:Number=-1, $path:Array=null):void
 		{
 			length = $length;
@@ -21,33 +21,33 @@ package com.lassie.player.geom
 			_path = ($path != null) ? $path : new Array();
 			_nodes = new Array();
 		}
-		
+
 		public function destroy():void {
 			_path = null;
 			_nodes = null;
 		}
-		
+
 		/**
 		* Returns an array of the path's Node objects after path has been compiled.
 		*/
 		public function get nodes():Array {
 			return _nodes;
 		}
-		
+
 		/**
 		* Returns all current data as a new Path object.
 		*/
 		public function copy():Path {
 			return new Path(length, bestCase, _path.slice());
 		}
-		
+
 		/**
 		* Tests if path has been initialized with actual pathing data.
 		*/
 		public function get hasLength():Boolean {
 			return (length + bestCase) >= 0;
 		}
-		
+
 		/**
 		* Returns the last node id contained within the path.
 		*/
@@ -61,14 +61,14 @@ package com.lassie.player.geom
 		public function containsNode($id:String):Boolean {
 			return _path.indexOf($id) > -1;
 		}
-		
+
 		/**
 		* Adds a node to the path if not already present.
 		*/
 		public function addNode($id:String):void {
 			if (!containsNode($id)) _path.push($id);
 		}
-		
+
 		/**
 		* compiles path into actual Node objects.
 		*/
@@ -78,7 +78,7 @@ package com.lassie.player.geom
 				_nodes.push($grid.getNodeById($nodeId));
 			}
 		}
-		
+
 		/**
 		* Trace object to string.
 		*/

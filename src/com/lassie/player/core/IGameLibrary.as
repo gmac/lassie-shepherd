@@ -7,7 +7,7 @@ package com.lassie.player.core
 	import flash.events.IEventDispatcher;
 	import flash.display.MovieClip;
 	import flash.media.Sound;
-	
+
 	/**
 	* IGameLibrary defines properties and methods of the library manager object.
 	*/

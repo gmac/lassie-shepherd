@@ -8,25 +8,25 @@ package com.lassie.player.model
 	{
 		private const JOIN:String = "_";
 		private var _combos:Object;
-		
+
 		public function ComboModelSet($class:Class=null):void
 		{
 			super( InventoryCombo );
 			_combos = new Object();
 		}
-		
+
 	//-------------------------------------------------
 	// Overrides
 	//-------------------------------------------------
-	
+
 		override public function destroy():void
 		{
 			super.destroy();
-			
+
 			for (var j:String in _combos) delete _combos[j];
 			_combos = null;
 		}
-		
+
 		override internal function parse($list:XMLList):void
 		{
 			for each (var comboXml:XML in $list)
@@ -36,7 +36,7 @@ package com.lassie.player.model
 				_integrate(combo);
 			}
 		}
-		
+
 		/**
 		* Integrator: keys all item combinations into a lookup table.
 		*/
@@ -44,7 +44,7 @@ package com.lassie.player.model
 		{
 			// localize combo's pool reference
 			var pool:Array = $combo.pool;
-			
+
 			if ($combo.primary != "")
 			{
 				// If combo has a primary item assigned,
@@ -67,11 +67,11 @@ package com.lassie.player.model
 				}
 			}
 		}
-		
+
 	//-------------------------------------------------
 	// ModelSet methods
 	//-------------------------------------------------
-		
+
 		/**
 		* Gets an InventoryCombo model that applies to two specific items.
 		*/

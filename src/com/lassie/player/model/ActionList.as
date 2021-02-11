@@ -8,7 +8,7 @@ package com.lassie.player.model
 	{
 		private var _actionList:Array;
 		private var _actionTable:Object;
-		
+
 		public function ActionList($id:String=""):void
 		{
 			super($id);
@@ -19,7 +19,7 @@ package com.lassie.player.model
 	//-------------------------------------------------
 	// Overrides
 	//-------------------------------------------------
-	
+
 		override public function destroy():void
 		{
 			// destroy all actions in the list
@@ -45,28 +45,28 @@ package com.lassie.player.model
 				$index++;
 			}
 		}
-		
+
 		override public function toString():String {
 			return "[ActionList] id: "+ id +", actions: "+ numActions;
 		}
-		
+
 	//-------------------------------------------------
 	// Model methods
 	//-------------------------------------------------
-	
+
 		/**
 		* Adds an Action object to the list.
 		*/
 		internal function addAction($action:Action):void
 		{
 			_actionList.push($action);
-			
+
 			// add reference to key table if action has a valid Id.
 			if ($action.id != "") {
 				_actionTable[$action.id] = $action;
 			}
 		}
-		
+
 		/**
 		* Removes and returns an action at the specified index.
 		*/
@@ -77,7 +77,7 @@ package com.lassie.player.model
 			}
 			return null;
 		}
-		
+
 		/**
 		* Specifies whether an action with the specified id exists.
 		*/
@@ -85,7 +85,7 @@ package com.lassie.player.model
 		{
 			return _actionTable.hasOwnProperty($id);
 		}
-		
+
 		/**
 		* Gets an action by Id from the key table.
 		*/
@@ -107,7 +107,7 @@ package com.lassie.player.model
 			}
 			return null;
 		}
-		
+
 		/**
 		* Gets the title of the specified list action.
 		*/
@@ -117,7 +117,7 @@ package com.lassie.player.model
 			if ($action != null) return $action.title;
 			return "";
 		}
-		
+
 		/**
 		* Gets the number of actions in the list.
 		*/
