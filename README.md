@@ -1,10 +1,21 @@
-Lassie Shepherd
+# Lassie Shepherd
 ---------------
 @author Greg MacWilliam
 @version Shepherd v2.0
 @release 08/14/11
 
+## About
 
+![Lassie studio](./lassie-shepherd.jpg)
+
+Lassie Shepherd was the third generation of the Lassie point-and-click adventure game engine written in Flash ActionScript3; it followed up previous generations of the engine written in Flash ActionScript2 and Director Lingo. Lassie Shepherd was by far the most robust version of the engine with an XML-based macro syntax that supported asynchronous sequencing and threading. The engine was used to produce several finished titles, including:
+
+- What Makes You Tick?
+- What Makes You Tick: A Stitch in Time
+- Something Amiss, Parts 1-3
+- Benthic Zone
+
+## Release notes
 
 UPGRADE INSTRUCTIONS
 ____________________
