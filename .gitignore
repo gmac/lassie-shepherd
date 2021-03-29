@@ -1,0 +1,7 @@
+.DS_Store
+src/lib
+src/xml
+src/sheep_f10.*
+src/sheep_f32.app
+src/sheep_f32.exe
+src/lassie.swf

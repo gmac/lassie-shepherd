@@ -11,14 +11,14 @@ package com.stimuli.loading.lazyloaders{
 	import flash.system.ApplicationDomain;
 	import flash.media.SoundLoaderContext;
 /**
-*       @example Basic usage:<listing version="3.0">   
+*       @example Basic usage:<listing version="3.0">
     var lazy : LazyJSONLoader = new LazyJSONLoader("sample-lazy.json", "myBulkLoader");
     // listen to when the lazy loader has loaded the external definition
     lazy.addEventListener(Event.LAZY_LOADED, onLazyLoaded);
     // add regular events to the BulkLoader instance
     lazy.addEventListener(ProgressEvent.PROGRESS, onLazyProgress);
     lazy.addEventListener(Event.LAZY_LOADED, onAllItemsLoaded);
-    
+
     function onLazyLoaded(evt : Event) : void{
         // now you can add individual events for items
         onLazyLoaded.get("config").addEventListener(BulkLoader.COMPLETE, onConfigLoaded);
@@ -31,23 +31,21 @@ package com.stimuli.loading.lazyloaders{
     	function LazyJSONLoader(url : *, name : String, numConnections : int = BulkLoader.DEFAULT_NUM_CONNECTIONS, logLevel : int = BulkLoader.DEFAULT_LOG_LEVEL){
     		super (url, name, numConnections, logLevel);
     	}
-    
+
         /** Reads a xml as a string and create a complete bulk loader from it.
         *   @param withData The xml to be read as a string.
         *   @private
         */
-        
+
         public function get decodeFunc() : Function {
             if (!Boolean(_decodeFunc)){
-                // defaults to adobe`s corelib decoder:
-                var decoderClass : Object = getDefinitionByName("com.adobe.serialization.json.JSON");
-                _decodeFunc = decoderClass.decode;
-            } 
-            return _decodeFunc; 
+                _decodeFunc = JSON.parse;
+            }
+            return _decodeFunc;
         }
-        
-        public function set decodeFunc(value:Function) : void { 
-            _decodeFunc = value; 
+
+        public function set decodeFunc(value:Function) : void {
+            _decodeFunc = value;
         }
     	lazy_loader override function _lazyParseLoader(withData : String) : void{
     	    var source : Object = decodeFunc(withData);
